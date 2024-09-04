@@ -5,6 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon-32x32.png">
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    fontFamily: {
+                        'm': ['Montserrat'],
+                        'f': ['Fraunces'],
+                    },
+                    extend: {
+                        colors: {
+                            'darkCyan': '#3C8067',
+                            'cream': '#F2EBE3',
+                            'veryDarkBlue': '#1C232B',
+                            'darkGrayshBlue': '#6C7289',
+                        }
+                    }
+                }
+            }
+        </script>
 
         <title>Product preview card</title>
     </head>
