@@ -20,7 +20,7 @@
                             'darkCyan': '#3C8067',
                             'cream': '#F2EBE3',
                             'veryDarkBlue': '#1C232B',
-                            'darkGrayshBlue': '#6C7289',
+                            'darkGrayBlue': '#6C7289',
                         },
                         backgroundImage: {
                             'img-mobile': "url('./assets/images/image-product-mobile.jpg')",
@@ -33,15 +33,31 @@
 
         <title>Product preview card</title>
     </head>
-    <body>
-        <main>
-            <div></div>
+    <body class="flex flex-col items-center justify-center h-screen bg-cream">
+        <main class="grid grid-row-2 rounded-xl px-5">
+            <div class="bg-img-mobile bg-cover py-32 rounded-t-xl"></div>
+            <div class="bg-white p-6 rounded-b-xl">
+                <h5 class="font-m text-darkGrayBlue text-xs">
+                    P E R F U M E
+                </h5>
+                <h1 class="font-f text-veryDarkBlue font-bold text-3xl">
+                    Gabrielle Essence Eau De Parfum
+                </h1>
+                <p class="font-m text-darkGrayBlue text-sm leading-relaxed">
+                    A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                    Perfumer-Creator for the House of CHANEL.
+                </p>
+                <div>
+                    <span class="">$149.99</span>
+                    <span>$169.99</span>
+                </div>
+            </div>
         </main>
         
         <footer>
-            <div class="">
-                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-                Coded by <a href="#">Andrew Raphael</a>.
+            <div class="text-xs">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-800">Frontend Mentor</a>.
+                Coded by <a href="#" class="text-blue-800">Andrew Raphael</a>.
             </div>
         </footer>
     </body>
